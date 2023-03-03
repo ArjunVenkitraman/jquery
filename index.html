@@ -37,16 +37,18 @@
 
                    // });
                     var div = $("#train");
-                    div.animate({left: '350px'},5000),
-                    div.animate({top:"200px"},2000),
-                    div.animate({left:'1200px'},5000);
+                    div.animate({left: '220px'},5000),
+                    div.animate({top:"200px"},1000),
+                    div.animate({left:'1100px'},5000);
                 });
             });
 
             $(document).ready(function(){
                 $("#go").click(function(){
                     var left = $("#left");
-                    left.animate({right:'900px'},11000)
+                    left.animate({right:'400px'},6000)
+                    left.delay(1000)
+                    left.animate({right:'800px'},6000)
                 })
             })
 
@@ -60,9 +62,17 @@
             $(document).ready(function(){
                 $("#happy").click(function(){
                  $("body")
-                    .css({background:'pink'})
-                })
-            })
+                    .css({"background-image":"url(background.jpg)"})
+                });
+            });
+
+            $(document).ready(function(){
+                $("#take").hover(function(){
+                    $(this).animate({'zoom':1.2},400);
+                    $(this).css("background-color","yellow");
+                });
+                });
+        
             </script>
 </head>
 
@@ -74,6 +84,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
     <button type="button" id="reg" >Registration</button>
     <button type="button" id="go">Choo choo Train</button>
     <button type="button" id="happy">Happy</button>
+    <p id="hello" style="display: none;">Take Diversion</p>
 <div id="toggle" style="background-color: rgb(73, 98, 212);margin: 50px;border: 5px rgb(18, 188, 255) solid;display:none">
     <form class="row g-3 needs-validation" novalidate>
         
@@ -159,12 +170,13 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
       </div>
 </div>
 <div>
-    <img id="khan"src="vsgif_com__.3254079.gif" style="position: absolute;margin-top: 200px;padding-left: 600px;display: none;">
-     <img id="rstation" src="railway-station-removebg-preview.png" style="position: absolute;margin-top: 200px;height: 200px;;"> 
+    <!-- <img id="take"src="take.png" style="position: absolute;height: 100px;padding-left: 600px;"> -->
+    <img id="take"src="squarespace-3-unscreen.gif" style="height: 150px;position: absolute;padding-left: 500px;">
+    <img id="khan"src="vsgif_com__.3254079.gif" style="position: absolute;margin-top: 200px;padding-left: 500px;display: none;">
+     <img id="rstation" src="railway-station-removebg-preview.png" style="position: absolute;margin-top: 300px;height: 200px;;"> 
     <img src="station.png" style="float: right;height: 250px;position: relative;">
 <img id="train" src="train.png" height="200px" style="position: relative;">
 <img id="left"  src="trainleft.png" height="200px" style="float: right;position: relative;">
-
 </div>
 </body>
 
