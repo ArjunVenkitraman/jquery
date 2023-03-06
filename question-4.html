@@ -11,38 +11,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <style>
-    .log-form{
-    height:400x;
-    width:400px;
-    margin: 20px;
-}
-.animate{
-    width: 100%;
-    height: 300px;
-}
-.img2{
-    
-    margin-top: 100px;
-    position: relative;
-}
-.img1{
-    position: relative;
-}
-.change{
-    background-image: url(/img/22z.gif);
-    
-}
-        </style>
+        
 <script>
-
+    $(document).ready(function(){
     $("#phoneadd").click(function(){
    $("#phone").prepend("<img src='mobile-3.jpg'>");
 });
-
+ 
 $("#lapadd").click(function(){
   $("#lap").append("<img src='lap-3.jpg'>");
 });
+}); 
 </script>
 </head>
 <body>
@@ -60,7 +39,7 @@ $("#lapadd").click(function(){
                     <img src='lap-1.jpg'>
                     <img src='lap-2.jpg'>
 
-                    <button id="lapadd">Add LAPTOP</button>
+                    
                 </div>
             </div>
         </div>
@@ -76,11 +55,12 @@ $("#lapadd").click(function(){
                 <div class="accordion-body" id="phone">
                     <img src='mobile-1.jpg'>
                     <img src='mobile-2.jpg'>
-                    <button id="phoneadd">Add MOBILE</button>
+                   
                 </div>
             </div>
         </div>
     </div>
-
+    <button id="lapadd">Add LAPTOP</button>
+    <button id="phoneadd">Add MOBILE</button>
 </body>
 </html>
